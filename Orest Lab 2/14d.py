@@ -1,9 +1,5 @@
-def sumDigits(num):
-    sum = 0
-    while (num != 0):
-        sum = sum + int(num % 10)
-        num = int(num/10)
-    return sum
-num = 1488
-print(sumDigits(num))
-
+num = input("Input a four digit numbers: ")
+res = 0
+for i in num:
+    res += int(i)
+print("The sum of digits in the number is: ",res)
